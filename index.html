@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استاد اسمی | مشاوره و اجرای کارخانه یخ</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+--<!                <img src="images/logo.png" alt="لوگوی استاد اسمی" width="100" height="100">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">استاد اسمی</div>
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">خانه</a>
+            <a href="#about" class="menu-item">درباره ما</a>
+            <a href="#contact" class="menu-item">تماس با ما</a>
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">احداث کارخانه یخ درخشان</h2>
+                <p id="current-description">با مشاوره و اجرای استاد اسمی در اندیمشک، آینده‌ای درفشان در صنعت یخ بسازید</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/2.5.jpeg" alt="کارخانه یخ" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/2.jpeg" alt="اجرای پروژه" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/5.jpeg" alt="مشاوره تخصصی" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>مشاوره و اجرای کارخانه یخ</h2>
+                <p>با تجربه استاد اسمی، متخصص احداث کارخانه یخ در خوزستان، از ایده تا اجرا در کنارتان هستیم</p>
+            </div>
+            
+            <div class="about-main">
+                <div class="about-info">
+                    <h3>خدمات درفشان ما</h3>
+                    <p>استاد اسمی با سال‌ها تجربه، آماده ارائه مشاوره تخصصی و اجرای کامل کارخانه‌های یخ در اندیمشک و سراسر خوزستان است. از انتخاب مکان تا طراحی و راه‌اندازی، همراه شما هستیم.</p>
+                    
+                    <ul class="feature-list">
+                        <li>مشاوره تخصصی و دقیق</li>
+                        <li>اجرای کامل و حرفه‌ای پروژه</li>
+                        <li>آموزش و پشتیبانی کارکنان</li>
+                        <li>استفاده از تجهیزات استاندارد روز دنیا</li>
+                        <li>خدمات سریع و مطمئن در سراسر خوزستان</li>
+                    </ul>
+                    
+                    <a href="#contact" class="cta-button">
+                        شروع همکاری
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>ارتباط با ما</h2>
+                <p>برای دریافت مشاوره تخصصی در خصوص احداث کارخانه یخ، همین امروز تماس بگیرید</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-text">
+                                <h4>ایمیل</h4>
+                                <p>info@ostadesmi.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-text">
+                                <h4>تلفن</h4>
+                                <p>۰۹۱۲-۱۲۳-۴۵۶۷</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-text">
+                                <h4>آدرس</h4>
+                                <p>اندیمشک، دفتر مرکزی استاد اسمی</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-text">
+                                <h4>ساعات کاری</h4>
+                                <p>شنبه تا پنج‌شنبه: ۹ صبح تا ۶ عصر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">نام شما</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">موضوع</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">پیام شما</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ارسال پیام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © ۲۰۲۵ استاد اسمی – کلیه حقوق محفوظ است. | طراحی شده برای خوزستان درفشان
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+</html>
